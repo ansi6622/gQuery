@@ -12,6 +12,8 @@
 
   // Gets the value of a css property if the value is not specified
   // Otherwise, sets the value of the specified property.
+  // The get computed style method might be useful here:
+  // https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
   gQueryObj.prototype.css = function(property, value) {
   };
 
