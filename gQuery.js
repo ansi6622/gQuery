@@ -4,15 +4,15 @@
   // returned should be a gQuery object.
   // The qQuery function should be able to handle 3 different types of
   // of values being passed at the param:
+  //
   // 1. A string which defines the selector to execute on the dom
   //    and returns dom elements that will be saved as a gQuery obj.
   // 2. An instance of HTMLElement.  Since the object has already been
   //    found, no query selector is needed, just return a gQuery object
   //    with the element saved in an array.
-  // 3. Something that looks like an array (It must have a lenght and
-  //    the length is greater than 0).  The the param looks like an array,
-  //    assume that you are being passed an array of HTMLElements.  Simply
-  //    add that array as a parameter to the gQuery object.
+  // 3. An instance of NodeList. We will assume that the NodeList
+  //    has a list of HTMLElements  Simply add the NodeList as a
+  //    parameter to the gQuery object.
   var gQuery = function(param) {
   }
 
